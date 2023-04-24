@@ -1,0 +1,9 @@
+.nextDays {
+  background: #100e1d;
+}
+
+.nextDays .box {
+  max-width: 200px;
+  background: #1e213a;
+  color: white;
+}

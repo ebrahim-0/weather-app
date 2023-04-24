@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hightlights {
+  background-color: #1e213a;
+}
+
+.hightlights .box {
+  padding: 20px;
+  text-align: center;
+}
+
+.hightlights .box .text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+
+  color: #e7e7eb;
+}
+
+.hightlights .box .value {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 75px;
+  color: #e7e7eb;
+}
+
+@media (max-width: 991px) {
+  .hightlights .boxs {
+    flex-direction: column;
+  }
+}
+
+.row {
+  margin-right: 0 !important;
+}
