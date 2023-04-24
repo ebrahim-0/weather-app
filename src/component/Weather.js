@@ -1,7 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchWeather } from "../rtk/Slices/weatherSlice";
-import { Button, Col, Container, Row } from "react-bootstrap";
 import Search from "./Search";
 import Hightlight from "./Highlight";
 import NextDays from "./NextDays";
@@ -11,13 +10,9 @@ function Weather() {
 
   const dispatch = useDispatch();
 
-  const value = useRef();
-
   useEffect(() => {
     dispatch(fetchWeather("tanta"));
   }, []);
-
-  console.log(getWeather);
 
   return (
     <>

@@ -12,6 +12,7 @@ function NextDays() {
   useEffect(() => {
     dispatch(fetchWeather("tanta"));
   }, []);
+
   return (
     <div className="nextDays p-4">
       <Row className="boxs gap-5 justify-content-center">
