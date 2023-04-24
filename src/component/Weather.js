@@ -4,6 +4,7 @@ import { fetchWeather } from "../rtk/Slices/weatherSlice";
 import Search from "./Search";
 import Hightlight from "./Highlight";
 import NextDays from "./NextDays";
+import "./Loading.css";
 
 function Weather() {
   const getWeather = useSelector((state) => state.weather);
@@ -16,14 +17,21 @@ function Weather() {
 
   return (
     <>
-      {getWeather.length > 1 ? (
+      {getWeather.length > 0 ? (
         <>
           <Search />
           <NextDays />
           <Hightlight />
         </>
       ) : (
-        <h1>no data</h1>
+        <div className="loading">
+          <div>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
       )}
     </>
   );
